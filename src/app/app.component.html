@@ -1,0 +1,23 @@
+<div class = "container d-flex justify-content-around mt-4"> 
+  <section class = "d-flex justify-content-center align-items-center">
+    <button class = "btn" (click) = "left()"> < </button>
+  </section>
+  <section class = "d-flex flex-column align-items-center  ">
+    <img [src] ="images[Pointer]" class="img-fluid" alt="Responsive image">
+    <div class = "d-flex justify-content-around" style = "position: relative; top: -1rem;">
+      <i (click) = "left()" class="fa-solid fa-minus fa-2xl" style="color: #827a7a;" ></i>
+      <i (click) = "curr()" class="fa-solid fa-minus fa-2xl" style="color: #827a7a;"></i>
+      <i (click) = "right()" class="fa-solid fa-minus fa-2xl" style="color: #827a7a;"></i>
+    </div>
+  </section>
+ 
+  <section  class = "d-flex justify-content-center align-items-center">
+    <button class="btn" (click) = "right()"> > </button>
+  </section>
+</div>
+ 
+ <div class = "container d-flex justify-content-around down mt-5"> 
+      <div *ngFor = "let card of cardContentArray">
+        <app-card [cardContent] = "card"></app-card>
+      </div>
+</div> 

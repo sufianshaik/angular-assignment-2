@@ -1,0 +1,22 @@
+j<section class = "pricing py-5">
+  <div class="card mb-5 mb-lg-0">
+      <div class="card-body">
+        <h5 class="card-title text-muted text-uppercase text-center">{{cardContent.price}}</h5>
+        <h6 class="card-price text-center">${{cardContent.money}}<span class="period">/month</span></h6>
+        <hr>
+        <ul class="fa-ul">
+          <li  [ngClass] = "!cardContent.icons[0] ? 'text-secondary' : ''" ><span class="fa-li"><i class="fas" [ngClass] = "cardContent.icons[0] ? 'fa-check' : 'fa-times' "></i></span>{{cardContent.user}}</li>
+          <li  [ngClass] = "!cardContent.icons[1] ? 'text-secondary' : ''" ><span class="fa-li"><i class="fas " [ngClass] = "cardContent.icons[1] ? 'fa-check' : 'fa-times'"></i></span>{{cardContent.storage}}</li>
+          <li  [ngClass] = "!cardContent.icons[2] ? 'text-secondary' : ''"  ><span class="fa-li"><i class="fas" [ngClass] = "cardContent.icons[2] ? 'fa-check' : 'fa-times'"></i></span>{{cardContent.limit}}</li>
+          <li  [ngClass] = "!cardContent.icons[3] ? 'text-secondary' : ''" ><span class="fa-li"><i class="fas "  [ngClass] = "cardContent.icons[3] ? 'fa-check' : 'fa-times'"></i></span>{{cardContent.access}}</li>
+          <li  [ngClass] = "!cardContent.icons[4] ? 'text-secondary' : ''" ><span class="fa-li"><i class="fas" [ngClass] = "cardContent.icons[4] ? 'fa-check' : 'fa-times'"></i></span>{{cardContent.privateProjects}}</li>
+          <li  [ngClass] = "!cardContent.icons[5] ? 'text-secondary' : ''" ><span class="fa-li"><i class="fa"  [ngClass] = "cardContent.icons[5] ? 'fa-check' : 'fa-times'"></i></span>{{cardContent.support}}</li>
+          <li  [ngClass] = "!cardContent.icons[6] ? 'text-secondary' : ''" ><span class="fa-li"><i class="fa" [ngClass] = "cardContent.icons[6] ? 'fa-check' : 'fa-times'" ></i></span>{{cardContent.subdomain}}</li>
+          <li  [ngClass] = "!cardContent.icons[7] ? 'text-secondary' : ''" ><span class="fa-li"><i class="fa" [ngClass] = "cardContent.icons[7] ? 'fa-check' : 'fa-times'"></i></span>{{cardContent.status}}</li>
+        </ul>
+        <div class="d-grid">
+          <a href="#" class="btn btn-primary text-uppercase">Button</a>
+        </div>
+      </div>
+  </div>
+</section>
